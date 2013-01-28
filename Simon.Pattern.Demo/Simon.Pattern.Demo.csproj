@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E182EB5-B6C2-4FC3-8A38-EB34DBA3F847}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Simon.Pattern.Demo</RootNamespace>
+    <AssemblyName>Simon.Pattern.Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Simon.Pattern.AbstractFactory\Simon.Pattern.AbstractFactory.csproj">
+      <Project>{79A68034-04B7-46D9-AE27-EAEA5BC6D3C4}</Project>
+      <Name>Simon.Pattern.AbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Adapter\Simon.Pattern.Adapter.csproj">
+      <Project>{96A4ED1A-D6B1-4C3C-800D-FBEA11275D71}</Project>
+      <Name>Simon.Pattern.Adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Bridge\Simon.Pattern.Bridge.csproj">
+      <Project>{5991F5AB-54FC-4847-B9B5-305A62B5CBD5}</Project>
+      <Name>Simon.Pattern.Bridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Builder\Simon.Pattern.Builder.csproj">
+      <Project>{E8556A6F-C7C7-461E-8542-AD8B295B8D50}</Project>
+      <Name>Simon.Pattern.Builder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.ChainOfResposibility\Simon.Pattern.ChainOfResposibility.csproj">
+      <Project>{5DE42A1D-D7EE-48EC-998F-73433C55F2AB}</Project>
+      <Name>Simon.Pattern.ChainOfResposibility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Command\Simon.Pattern.Command.csproj">
+      <Project>{0DA774E6-2D83-42C7-BE43-E1BD3DB11508}</Project>
+      <Name>Simon.Pattern.Command</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Composite\Simon.Pattern.Composite.csproj">
+      <Project>{1741100E-4A68-4384-9A64-83055899D051}</Project>
+      <Name>Simon.Pattern.Composite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Decorate\Simon.Pattern.Decorate.csproj">
+      <Project>{1EBA2A17-FAC0-4E6D-95C4-5067FC2A585A}</Project>
+      <Name>Simon.Pattern.Decorate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Facade\Simon.Pattern.Facade.csproj">
+      <Project>{89368E10-CFD7-46E0-B95F-4664CEF1C3A7}</Project>
+      <Name>Simon.Pattern.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Flyweight\Simon.Pattern.Flyweight.csproj">
+      <Project>{4B5E5614-7434-4BEF-8D9E-F24982988925}</Project>
+      <Name>Simon.Pattern.Flyweight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Iterator\Simon.Pattern.Iterator.csproj">
+      <Project>{1DD016A8-D2CD-4DD6-A0F6-19F7E79ED0CC}</Project>
+      <Name>Simon.Pattern.Iterator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Mediator\Simon.Pattern.Mediator.csproj">
+      <Project>{5736B852-E2EF-4D00-A12F-0EA92A5AD02E}</Project>
+      <Name>Simon.Pattern.Mediator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.MethodFactory\Simon.Pattern.MethodFactory.csproj">
+      <Project>{52790B23-5ADA-42C0-B12A-01DAEC0CC5D6}</Project>
+      <Name>Simon.Pattern.MethodFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.MethodTemplate\Simon.Pattern.MethodTemplate.csproj">
+      <Project>{42288732-02C5-4660-90B7-B4C0D761DEC2}</Project>
+      <Name>Simon.Pattern.MethodTemplate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Observer\Simon.Pattern.Observer.csproj">
+      <Project>{83E81EB7-208F-426A-A5DA-D52989214407}</Project>
+      <Name>Simon.Pattern.Observer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Prototype\Simon.Pattern.Prototype.csproj">
+      <Project>{666876B3-8B05-4E07-AD92-7B73B56E0F55}</Project>
+      <Name>Simon.Pattern.Prototype</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Proxy\Simon.Pattern.Proxy.csproj">
+      <Project>{FDEEEBC7-BEBB-4DCA-AC4E-37BC1A6EFC62}</Project>
+      <Name>Simon.Pattern.Proxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.SimpleFactory\Simon.Pattern.SimpleFactory.csproj">
+      <Project>{FC90C9A0-9972-4C2C-95EC-BD2824DF0347}</Project>
+      <Name>Simon.Pattern.SimpleFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Singleton\Simon.Pattern.Singleton.csproj">
+      <Project>{4E72D981-ACE5-4580-99A0-02588DE3A474}</Project>
+      <Name>Simon.Pattern.Singleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simon.Pattern.Strategy\Simon.Pattern.Strategy.csproj">
+      <Project>{E206F36B-5CA9-45D9-A35A-C1E1B0468C78}</Project>
+      <Name>Simon.Pattern.Strategy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
